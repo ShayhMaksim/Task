@@ -4,6 +4,7 @@ from typing import List
 from MediatorWrapper import MediatorWrapper
 
 class SignalWrapper(MediatorWrapper):
+    
     def __init__(self, signal: Signal,num_signals: int, ) -> None:
         super().__init__(num_signals, signal.statistic(), signal.category, signal)
 
