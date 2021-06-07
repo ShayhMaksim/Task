@@ -5,7 +5,7 @@ from Signal import Signal
 
 class MediatorWrapper(Mediator):
     
-    def __init__(self, num_signals:int ,  characteristics:List,  num_targets:int, signal:Signal) -> None:
+    def __init__(self, num_signals:int,  characteristics:List,  num_targets:int, signal:Signal) -> None:
         super().__init__(num_signals,characteristics,num_targets)
         self.signal=signal
 
@@ -19,7 +19,7 @@ class MediatorWrapper(Mediator):
             print("Аттрибуты category и/или length отсутсвуют")
 
     def absorb(self) -> None:
-        if self.signal.nature=="audio":
+        if self.signal.nature == "audio":
             self.signal.length=self.signal.length/4
 
     @abstractmethod

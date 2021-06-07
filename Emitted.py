@@ -2,11 +2,12 @@ from typing import List
 import abc
 
 class Emitted:
+    
     __metaclass__  = abc.ABCMeta
     codes = None
     strength = None
 
-    def __init__(self,category : int ,  length:float,  nature: str,  hazardous: bool):
+    def __init__(self,category : int,  length:float,  nature: str,  hazardous: bool):
         self.category=category
         self.length=length
         self.nature=nature

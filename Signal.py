@@ -4,10 +4,11 @@ import copy
 import random
 
 class Signal:
+    
     codes : List = None
     strength : float = 1.0
 
-    def __init__(self,category : int ,  length:float,  nature: str,  hazardous: bool):
+    def __init__(self,category : int,  length:float,  nature: str,  hazardous: bool):
         self.category=category
         self.length=length
         self.nature=nature

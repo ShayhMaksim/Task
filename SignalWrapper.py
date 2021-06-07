@@ -7,7 +7,6 @@ class SignalWrapper(MediatorWrapper):
     def __init__(self, signal: Signal,num_signals: int, ) -> None:
         super().__init__(num_signals, signal.statistic(), signal.category, signal)
 
-
     def reflect(self, b: List[float]) -> None:
         try:
             if isinstance(self.signal,Emitted):
@@ -17,9 +16,8 @@ class SignalWrapper(MediatorWrapper):
         except TypeError:
             print("signal не является сущностью класса Emitted")
             
-
     def gain(self, a: int) -> float:
-        if self.signal.hazardous==True:
+        if self.signal.hazardous == True:
             print("Опасно выполнять данную операцию!")
         else:
             self.signal.length=self.signal.length*a

@@ -3,7 +3,7 @@ from typing import List
 
 class Mediator(ABC):
     
-    def __init__(self,num_signals:int ,  characteristics:List,  num_targets:int):
+    def __init__(self,num_signals:int,  characteristics:List,  num_targets:int):
         self.num_signals=num_signals
         self.characteristics=characteristics
         self.num_targets=num_targets
